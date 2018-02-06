@@ -2,6 +2,21 @@ import numpy as np
 import math
 import time
 
+RESAMPLE_FREQUENCY = 100
+
+robot_pos_prev = 0
+target_pos_prev = 0
+
+def initialize_planner(env_map,robotpos,targetpos):
+    global robot_pos_prev
+    global target_pos_prev
+
+    robot_pos_prev  = robotpos
+    target_pos_prev = targetpos
+
+    
+def 
+    
 def robotplanner(envmap, robotpos, targetpos):
   numofdirs = 8
   dX = [-1, -1, -1, 0, 0, 1, 1, 1]
